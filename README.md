@@ -30,10 +30,6 @@ especially in areas I’m skilled at.
 
 ---
 
-### 🐍 Contribution Snake (fun animation)
-![Snake animation](https://raw.githubusercontent.com/Platane/snk/master/snake.svg?user=mrwangshipei)
-
----
 
 ### 👀 Profile Views
 ![Profile Views](https://komarev.com/ghpvc/?username=mrwangshipei&color=blue&style=flat-square)
