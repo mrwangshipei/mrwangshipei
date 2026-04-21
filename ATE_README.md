@@ -1,4 +1,4 @@
-\# AXATE (Android eXtended Automatic Test Equipment)
+# AXATE (Android eXtended Automatic Test Equipment)
 
 
 
@@ -6,43 +6,43 @@
 
 
 
-\[!\[Windows](https://img.shields.io/badge/OS-Windows-blue)](https://www.microsoft.com/windows)
+[![Windows](https://img.shields.io/badge/OS-Windows-blue)](https://www.microsoft.com/windows)
 
-\[!\[.NET Framework](https://img.shields.io/badge/.NET-Framework-5C2D91?logo=.net)](https://dotnet.microsoft.com/framework)
+[![.NET Framework](https://img.shields.io/badge/.NET-Framework-5C2D91?logo=.net)](https://dotnet.microsoft.com/framework)
 
-\[!\[Visual Studio](https://img.shields.io/badge/IDE-Visual%20Studio-5C2D91?logo=visual-studio)](https://visualstudio.microsoft.com)
-
-
-
-\---
+[![Visual Studio](https://img.shields.io/badge/IDE-Visual%20Studio-5C2D91?logo=visual-studio)](https://visualstudio.microsoft.com)
 
 
 
-\## 目录
+---
 
 
 
-\- \[技术栈](#技术栈)
-
-\- \[使用的开源项目](#使用的开源项目)
-
-\- \[源代码行数](#源代码行数)
-
-\- \[项目结构](#项目结构)
-
-\- \[入口点](#入口点)
-
-\- \[技术实现概览](#技术实现概览)
-
-\- \[构建要求](#构建要求)
+## 目录
 
 
 
-\---
+- [技术栈](#技术栈)
+
+- [使用的开源项目](#使用的开源项目)
+
+- [源代码行数](#源代码行数)
+
+- [项目结构](#项目结构)
+
+- [入口点](#入口点)
+
+- [技术实现概览](#技术实现概览)
+
+- [构建要求](#构建要求)
 
 
 
-\## 技术栈
+---
+
+
+
+## 技术栈
 
 
 
@@ -68,7 +68,7 @@
 
 
 
-\### 项目架构
+### 项目架构
 
 
 
@@ -102,11 +102,11 @@
 
 
 
-\---
+---
 
 
 
-\## 使用的开源项目
+## 使用的开源项目
 
 
 
@@ -134,27 +134,27 @@
 
 
 
-\### 外部依赖 DLL (WaiBuDLL)
+### 外部依赖 DLL (WaiBuDLL)
 
 
 
-\- `GongJuJiHe.dll` - 工具集合
+- `GongJuJiHe.dll` - 工具集合
 
-\- `Microsoft.Ink.dll` - 触控笔输入
+- `Microsoft.Ink.dll` - 触控笔输入
 
-\- `System.Data.SQLite.dll` - SQLite 驱动
+- `System.Data.SQLite.dll` - SQLite 驱动
 
-\- `UIChuanTi.dll` - UI 传输库
+- `UIChuanTi.dll` - UI 传输库
 
-\- `ZiDingYiKongJian.dll` - 自定义控件
-
-
-
-\---
+- `ZiDingYiKongJian.dll` - 自定义控件
 
 
 
-\## 源代码行数
+---
+
+
+
+## 源代码行数
 
 
 
@@ -166,7 +166,7 @@ Total: \~71,000 lines of C# source code
 
 
 
-\### 主要模块代码量 (估算)
+### 主要模块代码量 (估算)
 
 
 
@@ -194,11 +194,11 @@ Total: \~71,000 lines of C# source code
 
 
 
-\---
+---
 
 
 
-\## 项目结构
+## 项目结构
 
 
 
@@ -266,15 +266,15 @@ AXATE/
 
 
 
-\---
+---
 
 
 
-\## 入口点
+## 入口点
 
 
 
-\### 主程序入口
+### 主程序入口
 
 
 
@@ -284,7 +284,7 @@ AXATE/
 
 ```csharp
 
-\[STAThread]
+[STAThread]
 
 static void Main()
 
@@ -350,7 +350,7 @@ static void Main()
 
 
 
-\### 主窗口类
+### 主窗口类
 
 
 
@@ -374,15 +374,15 @@ public partial class TKATSClass : BaseForm, IATEForm
 
 
 
-\---
+---
 
 
 
-\## 技术实现概览
+## 技术实现概览
 
 
 
-\### 1. 状态机驱动的测试流程
+### 1. 状态机驱动的测试流程
 
 
 
@@ -392,7 +392,7 @@ public partial class TKATSClass : BaseForm, IATEForm
 
 ```
 
-None → PrepareTest → Testing → \[ Pause ] → (Completed | Failed | Aborted) → None
+None → PrepareTest → Testing → [ Pause ] → (Completed | Failed | Aborted) → None
 
 ```
 
@@ -402,15 +402,15 @@ None → PrepareTest → Testing → \[ Pause ] → (Completed | Failed | Aborte
 
 
 
-\- 支持状态转换回调 (OnEnter/OnExit)
+- 支持状态转换回调 (OnEnter/OnExit)
 
-\- 线程安全的状态切换
+- 线程安全的状态切换
 
-\- 事件通知机制 (StatusChanged)
+- 事件通知机制 (StatusChanged)
 
 
 
-\### 2. 多工厂模式
+### 2. 多工厂模式
 
 
 
@@ -448,13 +448,13 @@ public enum ATEFunc
 
 \*\*特点\*\*:
 
-\- 通过 IOC 容器注册不同的工厂实现
+- 通过 IOC 容器注册不同的工厂实现
 
-\- 支持运行时切换测试设备类型
+- 支持运行时切换测试设备类型
 
 
 
-\### 3. 测试生命周期管理
+### 3. 测试生命周期管理
 
 
 
@@ -474,15 +474,15 @@ Cycle Model:
 
 支持的生命周期类型:
 
-\- 基础测试循环
+- 基础测试循环
 
-\- 老化测试 (Aging)
+- 老化测试 (Aging)
 
-\- 多通道并行测试
+- 多通道并行测试
 
 
 
-\### 4. 多语言支持
+### 4. 多语言支持
 
 
 
@@ -516,7 +516,7 @@ Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
 
 
 
-\### 5. 数据持久化
+### 5. 数据持久化
 
 
 
@@ -552,13 +552,13 @@ var dbData = DatabaseConfiguration.Build()
 
 \*\*表结构\*\*:
 
-\- `test\_results` - 测试结果
+- `test\_results` - 测试结果
 
-\- `material\_version\_history` - 物料版本历史
+- `material\_version\_history` - 物料版本历史
 
 
 
-\### 6. 通讯协议
+### 6. 通讯协议
 
 
 
@@ -580,7 +580,7 @@ var dbData = DatabaseConfiguration.Build()
 
 
 
-\### 7. 数据上传
+### 7. 数据上传
 
 
 
@@ -602,35 +602,35 @@ DataUploadCenter
 
 支持的数据上报:
 
-\- 卓能系统对接
+- 卓能系统对接
 
-\- 物料版本同步
+- 物料版本同步
 
-\- 测试结果上传
-
-
-
-\### 8. 安全机制
+- 测试结果上传
 
 
 
-\- \*\*单实例运行\*\*: 通过 Mutex 实现
-
-\- \*\*管理员权限\*\*: 自动提权运行
-
-\- \*\*互斥体保护\*\*: 防止多实例冲突
+### 8. 安全机制
 
 
 
-\---
+- \*\*单实例运行\*\*: 通过 Mutex 实现
+
+- \*\*管理员权限\*\*: 自动提权运行
+
+- \*\*互斥体保护\*\*: 防止多实例冲突
 
 
 
-\## 构建要求
+---
 
 
 
-\### 开发环境
+## 构建要求
+
+
+
+### 开发环境
 
 
 
@@ -646,7 +646,7 @@ DataUploadCenter
 
 
 
-\### 构建配置
+### 构建配置
 
 
 
@@ -664,7 +664,7 @@ DataUploadCenter
 
 
 
-\### 输出目录
+### 输出目录
 
 
 
@@ -686,11 +686,11 @@ Release/
 
 
 
-\---
+---
 
 
 
-\## 许可证
+## 许可证
 
 
 
@@ -698,11 +698,11 @@ Release/
 
 
 
-\---
+---
 
 
 
-\## 作者
+## 作者
 
 
 
@@ -710,11 +710,11 @@ AXATE Development Team
 
 
 
-\---
+---
 
 
 
-\## 版本历史
+## 版本历史
 
 
 
@@ -728,7 +728,7 @@ AXATE Development Team
 
 
 
-\---
+---
 
 
 
