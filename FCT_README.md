@@ -1,6 +1,10 @@
 # FCT
 
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red)](https://en.wikipedia.org/wiki/Proprietary_software)
+
 FCT（Factory Test）是一款面向工厂的 Windows Forms 测试系统，支持多工厂切换、MES 系统对接、串口协议通信和软件授权管理。
+
+> **注意**: 本项目为商业闭源软件，仅供内部使用。
 
 ## 项目结构
 
