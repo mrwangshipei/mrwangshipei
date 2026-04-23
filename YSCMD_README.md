@@ -1,6 +1,10 @@
 # YSCMD 管理系统
 
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red)](https://en.wikipedia.org/wiki/Proprietary_software)
+
 YSCMD（数据中心管理系统）是一个用于**数据中心管理、数据更新与上传**的综合性后台系统，集成了前后端功能，适用于数据密集型业务场景。
+
+> **注意**: 本项目为商业闭源软件，仅供内部使用。
 
 本系统基于 [偌依开源管理系统](https://github.com/yangzongzhuan/RuoYi) 修改扩展，针对特定业务流程进行了定制优化，适配企业数据上传、更新和权限管理需求。
 
