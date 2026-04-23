@@ -1,10 +1,6 @@
 # AXATE (Android eXtended Automatic Test Equipment)
 
-
-
 基于 WinForms 开发的自动化测试解决方案，用于 Android 芯片/设备的功能与性能测试。
-
-
 
 [![Windows](https://img.shields.io/badge/OS-Windows-blue)](https://www.microsoft.com/windows)
 
@@ -50,21 +46,21 @@
 
 |------|------|
 
-| \*\*核心框架\*\* | .NET Framework 4.8 |
+| **核心框架** | .NET Framework 4.8 |
 
-| \*\*UI 框架\*\* | Windows Forms, Microsoft.Ink (触控笔支持) |
+| **UI 框架** | Windows Forms, Microsoft.Ink (触控笔支持) |
 
-| \*\*语言\*\* | C# 10.0 (preview) |
+| **语言** | C# 10.0 (preview) |
 
-| \*\*数据库\*\* | SQLite 3 (通过 System.Data.SQLite) |
+| **数据库** | SQLite 3 (通过 System.Data.SQLite) |
 
-| \*\*硬件通信\*\* | USB HID, Serial Port, I²C, SPI |
+| **硬件通信** | USB HID, Serial Port, I²C, SPI |
 
-| \*\*远程服务\*\* | WCF (Windows Communication Foundation) |
+| **远程服务** | WCF (Windows Communication Foundation) |
 
-| \*\*消息队列\*\* | MQTT (第三方库集成) |
+| **消息队列** | MQTT (第三方库集成) |
 
-| \*\*数据处理\*\* | ADO.NET, PetaPoco ORM |
+| **数据处理** | ADO.NET, PetaPoco ORM |
 
 
 
@@ -114,23 +110,23 @@
 
 |------|------|------|
 
-| \*\*PetaPoco.Compiled\*\* | 6.0.684-beta | 轻量级 ORM，用于 SQLite 数据操作 |
+| **PetaPoco.Compiled** | 6.0.684-beta | 轻量级 ORM，用于 SQLite 数据操作 |
 
-| \*\*Serilog\*\* | 4.3.0 | 结构化日志记录 (文件/Seq) |
+| **Serilog** | 4.3.0 | 结构化日志记录 (文件/Seq) |
 
-| \*\*Serilog.Sinks.Seq\*\* | 9.0.0 | 日志聚合与可视化 |
+| **Serilog.Sinks.Seq** | 9.0.0 | 日志聚合与可视化 |
 
-| \*\*Serilog.Sinks.File\*\* | 7.0.0 | 日志文件持久化 |
+| **Serilog.Sinks.File** | 7.0.0 | 日志文件持久化 |
 
-| \*\*Newtonsoft.Json\*\* | 13.0.1 | JSON 序列化/反序列化 |
+| **Newtonsoft.Json** | 13.0.1 | JSON 序列化/反序列化 |
 
-| \*\*UPPERIOC\*\* | 2.0.4.103 | 自研 IOC 容器框架 |
+| **UPPERIOC** | 2.0.4.103 | 自研 IOC 容器框架 |
 
-| \*\*FrmControl\*\* | 1.0.2.49 | UI 控件库 (第三方) |
+| **FrmControl** | 1.0.2.49 | UI 控件库 (第三方) |
 
-| \*\*System.Data.SQLite\*\* | 1.0.103.0 | SQLite ADO.NET 提供程序 |
+| **System.Data.SQLite** | 1.0.103.0 | SQLite ADO.NET 提供程序 |
 
-| \*\*Microsoft.Web.WebView2\*\* | 1.0.3719.77 | WebView2 容器集成 |
+| **Microsoft.Web.WebView2** | 1.0.3719.77 | WebView2 容器集成 |
 
 
 
@@ -160,7 +156,7 @@
 
 ```bash
 
-Total: \~71,000 lines of C# source code
+Total: ~71,000 lines of C# source code
 
 ```
 
@@ -174,19 +170,19 @@ Total: \~71,000 lines of C# source code
 
 |------|------|------|
 
-| `TKATS` (主程序) | \~4,000 | UI 界面与主流程 |
+| `TKATS` (主程序) | ~4,000 | UI 界面与主流程 |
 
-| `Common` | \~2,500 | 核心类库与工具 |
+| `Common` | ~2,500 | 核心类库与工具 |
 
-| `Protocol` | \~1,500 | 通讯协议实现 |
+| `Protocol` | ~1,500 | 通讯协议实现 |
 
-| `Dao` | \~500 | 数据访问层 |
+| `Dao` | ~500 | 数据访问层 |
 
-| `DataUpload` | \~800 | 数据上传逻辑 |
+| `DataUpload` | ~800 | 数据上传逻辑 |
 
-| `ATEService` | \~1,000 | WCF 服务实现 |
+| `ATEService` | ~1,000 | WCF 服务实现 |
 
-| 其他模块 | \~60,000 | 各功能模块 (测试项、设备驱动等) |
+| 其他模块 | ~60,000 | 各功能模块 (测试项、设备驱动等) |
 
 
 
@@ -238,13 +234,13 @@ AXATE/
 
 ├── Protocol/                 # 通讯协议
 
-│   ├── ACSource\_\*.cs       # AC 电源协议
+│   ├── ACSource_*.cs       # AC 电源协议
 
-│   ├── HighVoltage\_\*.cs    # 高压测试协议
+│   ├── HighVoltage_*.cs    # 高压测试协议
 
-│   ├── Oscilloscope\_\*.cs   # 示波器协议
+│   ├── Oscilloscope_*.cs   # 示波器协议
 
-│   └── TestBox\_TK.cs       # 测试盒协议
+│   └── TestBox_TK.cs       # 测试盒协议
 
 ├── Dao/                      # 数据访问层
 
@@ -278,7 +274,7 @@ AXATE/
 
 
 
-\*\*文件\*\*: `TKATS/Program.cs`
+**文件**: `TKATS/Program.cs`
 
 
 
@@ -290,59 +286,59 @@ static void Main()
 
 {
 
-&#x20;   // 全局异常处理注册
+   // 全局异常处理注册
 
-&#x20;   AppDomain.CurrentDomain.UnhandledException += GlobalExceptionHandler;
+   AppDomain.CurrentDomain.UnhandledException += GlobalExceptionHandler;
 
-&#x20;   TaskScheduler.UnobservedTaskException += GlobalTaskExceptionHandler;
-
-
-
-&#x20;   // 单实例检查
-
-&#x20;   Mutex mutex = new Mutex(false, string.Format("{0} - By UZ", Application.ProductName));
-
-&#x20;   Variables.IsAllReadyRun = !mutex.WaitOne(100, false);
+   TaskScheduler.UnobservedTaskException += GlobalTaskExceptionHandler;
 
 
 
-&#x20;   // 管理员权限检查
+   // 单实例检查
 
-&#x20;   WindowsPrincipal principal = new WindowsPrincipal(WindowsIdentity.GetCurrent());
+   Mutex mutex = new Mutex(false, string.Format("{0} - By UZ", Application.ProductName));
 
-&#x20;   if (principal.IsInRole(WindowsBuiltInRole.Administrator))
-
-&#x20;   {
-
-&#x20;       // 初始化数据库
-
-&#x20;       Center.InitDb();
+   Variables.IsAllReadyRun = !mutex.WaitOne(100, false);
 
 
 
-&#x20;       // IOC 容器配置
+   // 管理员权限检查
 
-&#x20;       UPPERIOCApplication.RunInstance(modcfg => {
+   WindowsPrincipal principal = new WindowsPrincipal(WindowsIdentity.GetCurrent());
 
-&#x20;           modcfg.UPPERFileModelMoudle(new UFileMConfig());
+   if (principal.IsInRole(WindowsBuiltInRole.Administrator))
 
-&#x20;           modcfg.AddModule<UPPERMutiFacotyMoudle<ATEFactory>>();
+   {
 
-&#x20;           // 注册状态机与数据库
+       // 初始化数据库
 
-&#x20;           modcfg.Provider.Rigister(new TestStateMachine());
-
-&#x20;           modcfg.Provider.Rigister(IDatabase db);
-
-&#x20;       });
+       Center.InitDb();
 
 
 
-&#x20;       // 启动主窗口
+       // IOC 容器配置
 
-&#x20;       Application.Run(new TKATSClass(channelType, ini));
+       UPPERIOCApplication.RunInstance(modcfg => {
 
-&#x20;   }
+           modcfg.UPPERFileModelMoudle(new UFileMConfig());
+
+           modcfg.AddModule<UPPERMutiFacotyMoudle<ATEFactory>>();
+
+           // 注册状态机与数据库
+
+           modcfg.Provider.Rigister(new TestStateMachine());
+
+           modcfg.Provider.Rigister(IDatabase db);
+
+       });
+
+
+
+       // 启动主窗口
+
+       Application.Run(new TKATSClass(channelType, ini));
+
+   }
 
 }
 
@@ -354,7 +350,7 @@ static void Main()
 
 
 
-\*\*文件\*\*: `TKATS/TKATS.cs`
+**文件**: `TKATS/TKATS.cs`
 
 
 
@@ -364,9 +360,9 @@ public partial class TKATSClass : BaseForm, IATEForm
 
 {
 
-&#x20;   // 实现 IATEForm 接口
+   // 实现 IATEForm 接口
 
-&#x20;   // 提供测试流程控制、数据采集、结果处理等核心功能
+   // 提供测试流程控制、数据采集、结果处理等核心功能
 
 }
 
@@ -386,7 +382,7 @@ public partial class TKATSClass : BaseForm, IATEForm
 
 
 
-采用\*\*状态机模式\*\*管理测试流程，确保线程安全：
+采用**状态机模式**管理测试流程，确保线程安全：
 
 
 
@@ -398,7 +394,7 @@ None → PrepareTest → Testing → [ Pause ] → (Completed | Failed | Aborted
 
 
 
-\*\*实现\*\*: `Common/status/TestStateMachine.cs`
+**实现**: `Common/status/TestStateMachine.cs`
 
 
 
@@ -424,7 +420,7 @@ public enum ATEFactory
 
 {
 
-&#x20;   ZhuoNeng,     // 卓能测试设备
+   ZhuoNeng,     // 卓能测试设备
 
 }
 
@@ -434,11 +430,11 @@ public enum ATEFunc
 
 {
 
-&#x20;   BeforeChangePN,
+   BeforeChangePN,
 
-&#x20;   FirstLoadPN,
+   FirstLoadPN,
 
-&#x20;   FirstShown
+   FirstShown
 
 }
 
@@ -446,7 +442,7 @@ public enum ATEFunc
 
 
 
-\*\*特点\*\*:
+**特点**:
 
 - 通过 IOC 容器注册不同的工厂实现
 
@@ -458,7 +454,7 @@ public enum ATEFunc
 
 
 
-\*\*实现\*\*: `Common/TestLifecycle/`
+**实现**: `Common/TestLifecycle/`
 
 
 
@@ -466,7 +462,7 @@ public enum ATEFunc
 
 Cycle Model:
 
-&#x20; Lifecycle → Event → Message → COM Port → Protocol
+ Lifecycle → Event → Message → COM Port → Protocol
 
 ```
 
@@ -494,11 +490,11 @@ Cycle Model:
 
 Language/Resouces/
 
-&#x20; ├── Resources\_ch.resx   # 中文
+ ├── Resources_ch.resx   # 中文
 
-&#x20; ├── Resources\_en.resx   # 英文
+ ├── Resources_en.resx   # 英文
 
-&#x20; └── FanYich\_en.resx     # 翻译资源
+ └── FanYich_en.resx     # 翻译资源
 
 ```
 
@@ -520,7 +516,7 @@ Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
 
 
 
-使用 \*\*PetaPoco ORM\*\* 操作 SQLite 数据库：
+使用 **PetaPoco ORM** 操作 SQLite 数据库：
 
 
 
@@ -530,11 +526,11 @@ Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
 
 var db = DatabaseConfiguration.Build()
 
-&#x20;   .UsingConnectionString("Data Source=Result.db;Password=12345;")
+   .UsingConnectionString("Data Source=Result.db;Password=12345;")
 
-&#x20;   .UsingProvider<SQLiteDatabaseProvider>()
+   .UsingProvider<SQLiteDatabaseProvider>()
 
-&#x20;   .Create();
+   .Create();
 
 
 
@@ -542,19 +538,19 @@ var db = DatabaseConfiguration.Build()
 
 var dbData = DatabaseConfiguration.Build()
 
-&#x20;   .UsingConnectionString("Data Source=db/Data.db;Password=12345;")
+   .UsingConnectionString("Data Source=db/Data.db;Password=12345;")
 
-&#x20;   .Create();
+   .Create();
 
 ```
 
 
 
-\*\*表结构\*\*:
+**表结构**:
 
-- `test\_results` - 测试结果
+- `test_results` - 测试结果
 
-- `material\_version\_history` - 物料版本历史
+- `material_version_history` - 物料版本历史
 
 
 
@@ -570,13 +566,13 @@ var dbData = DatabaseConfiguration.Build()
 
 |----------|----------|
 
-| AC 电源 | `ACSource\_APS5000A`, `ACSource\_PAG1010` |
+| AC 电源 | `ACSource_APS5000A`, `ACSource_PAG1010` |
 
-| 高压测试仪 | `HighVoltage\_JK7122`, `HighVoltage\_U9053` |
+| 高压测试仪 | `HighVoltage_JK7122`, `HighVoltage_U9053` |
 
-| 示波器 | `Oscilloscope\_DS1102E` |
+| 示波器 | `Oscilloscope_DS1102E` |
 
-| 测试盒 | `TestBox\_TK` |
+| 测试盒 | `TestBox_TK` |
 
 
 
@@ -592,9 +588,9 @@ var dbData = DatabaseConfiguration.Build()
 
 DataUploadCenter
 
-&#x20; ├── HttpCommunication (HTTP REST API)
+ ├── HttpCommunication (HTTP REST API)
 
-&#x20; └── ATEService (WCF)
+ └── ATEService (WCF)
 
 ```
 
@@ -614,11 +610,11 @@ DataUploadCenter
 
 
 
-- \*\*单实例运行\*\*: 通过 Mutex 实现
+- **单实例运行**: 通过 Mutex 实现
 
-- \*\*管理员权限\*\*: 自动提权运行
+- **管理员权限**: 自动提权运行
 
-- \*\*互斥体保护\*\*: 防止多实例冲突
+- **互斥体保护**: 防止多实例冲突
 
 
 
@@ -638,11 +634,11 @@ DataUploadCenter
 
 |------|------|
 
-| \*\*Visual Studio\*\* | 2022 |
+| **Visual Studio** | 2022 |
 
-| \*\*.NET Framework\*\* | 4.8 |
+| **.NET Framework** | 4.8 |
 
-| \*\*Windows SDK\*\* | 最新 |
+| **Windows SDK** | 最新 |
 
 
 
@@ -672,15 +668,15 @@ DataUploadCenter
 
 Release/
 
-&#x20; ├── AX-ATS.exe           # 主程序
+ ├── AX-ATS.exe           # 主程序
 
-&#x20; ├── Common.dll           # 共享类库
+ ├── Common.dll           # 共享类库
 
-&#x20; ├── Dao.dll              # 数据访问层
+ ├── Dao.dll              # 数据访问层
 
-&#x20; ├── Protocol.dll         # 协议库
+ ├── Protocol.dll         # 协议库
 
-&#x20; └── buffer-logs/         # 缓冲日志
+ └── buffer-logs/         # 缓冲日志
 
 ```
 
@@ -694,7 +690,7 @@ Release/
 
 
 
-&#x20;proprietary - 本项目为商业项目，仅供内部使用。
+proprietary - 本项目为商业项目，仅供内部使用。
 
 
 
@@ -724,7 +720,7 @@ AXATE Development Team
 
 | 1.0.x | - | 初始版本 |
 
-| 1.0.0.\* | - | 持续迭代中 |
+| 1.0.0.* | - | 持续迭代中 |
 
 
 
@@ -732,7 +728,7 @@ AXATE Development Team
 
 
 
-\*本文档根据项目源代码 自动生成\*
+*本文档根据项目源代码 自动生成*
 
 
 
